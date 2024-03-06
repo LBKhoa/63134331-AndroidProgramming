@@ -37,10 +37,35 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         TimDieuKhien();
+        // Gắn bộ lắng nghe sự kiện và code xử lý cho từng nút
+        nutCong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XuLyCong();
+            }
+        });
+        nutTru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XuLyTru();
+            }
+        });
+        nutNhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XuLyNhan();
+            }
+        });
+        nutChia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XuLyChia();
+            }
+        });
     }
 
     // Xử lý cộng
-    public void XuLyCong(View view){
+    public void XuLyCong(){
         //Code xử lý cộng ở đây
         //b1 lấy dữ liệu 2 số
 
@@ -59,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         editTextKetQua.setText(chuoiKQ);
     }
     // Xử lý trừ
-    public void XuLyTru(View view){
+    public void XuLyTru(){
         //Code xử lý trừ ở đây
         //b1 lấy dữ liệu 2 số
 
@@ -78,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         editTextKetQua.setText(chuoiKQ);
     }
     // Xử lý Nhân
-    public void XuLyNhan(View view){
+    public void XuLyNhan(){
         //Code xử lý nhân ở đây
         //b1 lấy dữ liệu 2 số
 
@@ -97,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         editTextKetQua.setText(chuoiKQ);
     }
     // Xử lý chia
-    public void XuLyChia(View view){
+    public void XuLyChia(){
         //Code xử lý chia ở đây
         //b1 lấy dữ liệu 2 số
 
