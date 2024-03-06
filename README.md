@@ -13,6 +13,8 @@ Trước hết, để bắt đầu cuộc phiêu lưu Android của bạn, hãy 
 2. **Set Up Android SDK**: Android Studio sẽ hỏi bạn cài đặt các thành phần SDK cần thiết trong quá trình cài đặt. Đảm bảo rằng bạn đã cài đặt các phiên bản SDK phù hợp cho các phiên bản Android mà bạn muốn hướng đến.
 
 3. **Tạo Dự Án Mới**: Mở Android Studio và bắt đầu cuộc hành trình mới với dự án của bạn. Theo dõi các bước trong hướng dẫn để thiết lập dự án với các thiết lập và cấu hình mong muốn.
+4. **Tôi Đã Kết Nối Với ĐT/Pair Devices Using WIFI With My Phone**: Tôi đã cố gắng kết nối điện thoại của mình để có thể hiện thị App mà mình lập trình và thành công.
+![Ảnh Mô Tả](img/Android.png)
 
 ## Khám Phá Các Thành Phần Quan Trọng
 
