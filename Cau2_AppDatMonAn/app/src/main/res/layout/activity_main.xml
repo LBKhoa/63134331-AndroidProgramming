@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/custom_background_gradian"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,8 +16,9 @@
         android:layout_marginTop="58dp"
         android:layout_marginEnd="161dp"
         android:text="Account Login"
-        android:textColor="#2196F3"
-        android:textSize="24sp"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

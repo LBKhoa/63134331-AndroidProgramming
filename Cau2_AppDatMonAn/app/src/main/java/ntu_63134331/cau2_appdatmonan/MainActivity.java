@@ -1,10 +1,12 @@
-package khoalb.ntu.loginform;
+package ntu_63134331.cau2_appdatmonan;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +15,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     Button btnLogin;
     EditText editTextEmail;
@@ -20,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Thay thế các giá trị này bằng các giá trị thực tế của bạn
     private static final String CORRECT_EMAIL = "lebaokhoa@gmail.com";
-    private static final String CORRECT_PASSWORD = "1232456789";
+    private static final String CORRECT_PASSWORD = "khoa1234";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         editTextEmail = findViewById(R.id.editTextText);
         editTextPassword = findViewById(R.id.editTextTextPassword);
         btnLogin = findViewById(R.id.btnLogin);
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,5 +57,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        //tìm listview
+
+
+
     }
 }
