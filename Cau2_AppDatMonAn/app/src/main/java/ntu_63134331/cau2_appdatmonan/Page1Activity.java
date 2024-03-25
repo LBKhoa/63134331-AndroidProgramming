@@ -51,6 +51,7 @@ public class Page1Activity extends AppCompatActivity {
                 Intent myintent = new Intent(Page1Activity.this, SubActivity.class);
                 myintent.putExtra("tenMonAn",tenMonAn[i]);
                 myintent.putExtra("idAnhMinhHoa", idAnhMinhHoa[i]); // Đưa id của hình ảnh
+                myintent.putExtra("moTa", moTa[i]);// đưa thêm mô tả món ăn
                 startActivity(myintent);
             }
         });

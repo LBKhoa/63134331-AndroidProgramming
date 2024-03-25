@@ -29,11 +29,14 @@ public class SubActivity extends AppCompatActivity {
         });
         txt_subMonAn = findViewById(R.id.txt_subMonAn);
         img_MA = findViewById(R.id.img_MA);
+        txt_subMoTa = findViewById(R.id.txt_subTTMonAn);
         //nhận intent
         Intent myIntent = getIntent();
         String tenMonAn = myIntent.getStringExtra("tenMonAn");
         int idAnhMinhHoa = myIntent.getIntExtra("idAnhMinhHoa",0);
+        String moTa = myIntent.getStringExtra("moTa");
         txt_subMonAn.setText(tenMonAn);
         img_MA.setImageResource(idAnhMinhHoa);
+        txt_subMoTa.setText(moTa);
     }
 }
