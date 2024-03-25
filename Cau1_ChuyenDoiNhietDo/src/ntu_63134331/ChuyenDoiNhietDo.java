@@ -73,8 +73,8 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(lblNewLabel_1_1);
 		
 		JButton btnCD = new JButton("Chuyển Đổi");
-		btnCD.setForeground(new Color(164, 200, 55));
-		btnCD.setBackground(new Color(164, 200, 55));
+		btnCD.setForeground(new Color(0, 0, 0));
+		btnCD.setBackground(new Color(255, 255, 255));
 		btnCD.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// Kiểm tra xem RadioButton nào đang được chọn
@@ -219,8 +219,8 @@ public class ChuyenDoiNhietDo extends JFrame {
         	public void actionPerformed(ActionEvent e) {
         	}
         });
-        btnCheck.setFont(new Font("Tahoma", Font.BOLD, 16));
-        btnCheck.setBounds(865, 240, 85, 32);
+        btnCheck.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnCheck.setBounds(865, 240, 110, 32);
         contentPane.add(btnCheck);
 
         // Panel chứa kết quả
@@ -237,6 +237,53 @@ public class ChuyenDoiNhietDo extends JFrame {
         temperatureData.put("Hà Nội", 25.0);
         temperatureData.put("Hồ Chí Minh", 30.5);
         temperatureData.put("Đà Nẵng", 28.0);
+        temperatureData.put("Hải Phòng", 24.0);
+        temperatureData.put("Cần Thơ", 31.0);
+        temperatureData.put("Hải Dương", 25.5);
+        temperatureData.put("Bà Rịa - Vũng Tàu", 29.5);
+        temperatureData.put("Biên Hòa", 30.0);
+        temperatureData.put("Nha Trang", 29.0);
+        temperatureData.put("Huế", 27.5);
+        temperatureData.put("Hà Giang", 23.0);
+        temperatureData.put("Lào Cai", 22.5);
+        temperatureData.put("Ninh Bình", 26.0);
+        temperatureData.put("Quảng Ninh", 24.5);
+        temperatureData.put("Thái Bình", 26.5);
+        temperatureData.put("Nam Định", 26.0);
+        temperatureData.put("Vĩnh Phúc", 25.5);
+        temperatureData.put("Phú Thọ", 25.0);
+        temperatureData.put("Thanh Hóa", 27.0);
+        temperatureData.put("Nghệ An", 27.0);
+        temperatureData.put("Hà Tĩnh", 27.0);
+        temperatureData.put("Quảng Bình", 27.0);
+        temperatureData.put("Quảng Trị", 27.0);
+        temperatureData.put("Quảng Nam", 28.0);
+        temperatureData.put("Bình Định", 28.0);
+        temperatureData.put("Phú Yên", 28.0);
+        temperatureData.put("Khánh Hòa", 29.0);
+        temperatureData.put("Gia Lai", 28.0);
+        temperatureData.put("Kon Tum", 28.0);
+        temperatureData.put("Đắk Lắk", 28.0);
+        temperatureData.put("Đắk Nông", 28.0);
+        temperatureData.put("Lâm Đồng", 28.0);
+        temperatureData.put("Bình Phước", 30.0);
+        temperatureData.put("Tây Ninh", 30.0);
+        temperatureData.put("Bình Dương", 30.0);
+        temperatureData.put("Đồng Nai", 30.0);
+        temperatureData.put("Bình Thuận", 29.0);
+        temperatureData.put("Long An", 30.0);
+        temperatureData.put("Tiền Giang", 30.0);
+        temperatureData.put("Bến Tre", 30.0);
+        temperatureData.put("Trà Vinh", 30.0);
+        temperatureData.put("Vĩnh Long", 30.0);
+        temperatureData.put("Đồng Tháp", 30.0);
+        temperatureData.put("An Giang", 30.0);
+        temperatureData.put("Kiên Giang", 30.0);
+        temperatureData.put("Cần Thơ", 30.0);
+        temperatureData.put("Hậu Giang", 30.0);
+        temperatureData.put("Sóc Trăng", 30.0);
+        temperatureData.put("Bạc Liêu", 30.0);
+        temperatureData.put("Cà Mau", 30.0);
 
         // Xử lý sự kiện khi nhấn nút Check
         btnCheck.addActionListener(new ActionListener() {
@@ -253,12 +300,12 @@ public class ChuyenDoiNhietDo extends JFrame {
         });
         
         resultArea = new JTextArea();
-        resultArea.setBackground(new Color(192, 192, 192));
+        resultArea.setBackground(new Color(0, 255, 255));
         resultArea.setBounds(631, 317, 209, 172);
         contentPane.add(resultArea);
         
         lblNewLabel_1 = new JLabel("Nhập 1 địa điểm:");
-        lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 20));
         lblNewLabel_1.setBounds(631, 197, 209, 30);
         contentPane.add(lblNewLabel_1);
         
