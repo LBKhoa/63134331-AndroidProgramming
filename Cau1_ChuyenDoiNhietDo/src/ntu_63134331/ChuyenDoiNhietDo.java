@@ -7,17 +7,23 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
-import java.awt.Graphics;
+
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.util.HashMap;
+import java.util.Map;
+import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.ButtonGroup;
-import javax.swing.ImageIcon;
+
 import javax.swing.JButton;
 import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
 
 public class ChuyenDoiNhietDo extends JFrame {
 
@@ -31,6 +37,11 @@ public class ChuyenDoiNhietDo extends JFrame {
 	private JTextField txtN;
 	private JRadioButton rdbtnC, rdbtnF, rdbtnK, rdbtnR, rdbtnD, rdbtnN;
 	private ButtonGroup buttonGroup;
+	private JTextField txtCheck;
+	private JButton btnCheck;
+	private JTextArea resultArea;
+	private Map<String, Double> temperatureData;
+	private JLabel lblNewLabel_1;
 	
 
 	
@@ -196,6 +207,60 @@ public class ChuyenDoiNhietDo extends JFrame {
         rdbtnR.addItemListener(new RadioButtonHandler(txtR));
         rdbtnD.addItemListener(new RadioButtonHandler(txtD));
         rdbtnN.addItemListener(new RadioButtonHandler(txtN));
+        
+        txtCheck = new JTextField();
+        txtCheck.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        txtCheck.setColumns(10);
+        txtCheck.setBounds(631, 237, 209, 37);
+        contentPane.add(txtCheck);
+        
+        btnCheck = new JButton("Check");
+        btnCheck.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
+        btnCheck.setFont(new Font("Tahoma", Font.BOLD, 16));
+        btnCheck.setBounds(865, 240, 85, 32);
+        contentPane.add(btnCheck);
+
+        // Panel chứa kết quả
+        JPanel resultPanel = new JPanel();
+        resultPanel.setLayout(new BorderLayout());
+        resultArea = new JTextArea(10, 30);
+        resultArea.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(resultArea);
+        resultPanel.add(scrollPane, BorderLayout.CENTER);
+
+
+        // Khởi tạo dữ liệu nhiệt độ cho các địa điểm ở Việt Nam
+        temperatureData = new HashMap<>();
+        temperatureData.put("Hà Nội", 25.0);
+        temperatureData.put("Hồ Chí Minh", 30.5);
+        temperatureData.put("Đà Nẵng", 28.0);
+
+        // Xử lý sự kiện khi nhấn nút Check
+        btnCheck.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String location = txtCheck.getText();
+                if (temperatureData.containsKey(location)) {
+                    Double temperature = temperatureData.get(location);
+                    resultArea.append(location + ": " + temperature + " °C\n");
+                } else {
+                    resultArea.append("Temperature data not available for " + location + "\n");
+                }
+            }
+        });
+        
+        resultArea = new JTextArea();
+        resultArea.setBackground(new Color(192, 192, 192));
+        resultArea.setBounds(631, 317, 209, 172);
+        contentPane.add(resultArea);
+        
+        lblNewLabel_1 = new JLabel("Nhập 1 địa điểm:");
+        lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblNewLabel_1.setBounds(631, 197, 209, 30);
+        contentPane.add(lblNewLabel_1);
         
 	}
 	// Lớp lắng nghe sự kiện cho các JRadioButton
