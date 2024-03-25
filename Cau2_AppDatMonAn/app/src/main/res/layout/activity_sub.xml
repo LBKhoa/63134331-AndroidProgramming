@@ -16,6 +16,7 @@
         android:background="#8BC34A"
         android:text="Bạn Đã Chọn"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -26,6 +27,7 @@
         android:background="#FFEB3B"
         android:text="Món Cơm Tấm Sườn"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -36,6 +38,7 @@
         app:srcCompat="@drawable/cts" />
 
     <TextView
+
         android:id="@+id/txt_subTTMonAn"
         android:layout_width="match_parent"
         android:layout_height="109dp"

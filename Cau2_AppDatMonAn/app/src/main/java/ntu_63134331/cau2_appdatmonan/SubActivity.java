@@ -30,13 +30,19 @@ public class SubActivity extends AppCompatActivity {
         txt_subMonAn = findViewById(R.id.txt_subMonAn);
         img_MA = findViewById(R.id.img_MA);
         txt_subMoTa = findViewById(R.id.txt_subTTMonAn);
+        txt_DonGia = findViewById(R.id.txt_DonGia);
         //nhận intent
         Intent myIntent = getIntent();
         String tenMonAn = myIntent.getStringExtra("tenMonAn");
         int idAnhMinhHoa = myIntent.getIntExtra("idAnhMinhHoa",0);
         String moTa = myIntent.getStringExtra("moTa");
+        double donGia = myIntent.getDoubleExtra("donGia",0);
+
+        String donGiaString = String.valueOf(donGia);//chuyển kiểu double của donGia sang hiển thị chuỗi
+
         txt_subMonAn.setText(tenMonAn);
         img_MA.setImageResource(idAnhMinhHoa);
         txt_subMoTa.setText(moTa);
+        txt_DonGia.setText(donGiaString);
     }
 }

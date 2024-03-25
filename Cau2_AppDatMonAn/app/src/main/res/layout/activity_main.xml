@@ -15,7 +15,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="152dp"
         android:layout_marginEnd="161dp"
-        android:text="Account Login"
+        android:text="APP FOOD LOGIN"
         android:textColor="#FF9800"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -32,7 +32,8 @@
         android:layout_marginEnd="101dp"
         android:background="@drawable/custom_edt"
         android:ems="10"
-        android:hint="Email Address"
+        android:drawableStart="@drawable/ic_email"
+        android:hint=" Email Address"
         android:textColorHint="@color/white"
         android:inputType="text"
         android:paddingLeft="10dp"
@@ -42,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:hint="Password"
+        android:hint="  Password"
         android:textColorHint="@color/white"
         android:background="@drawable/custom_edt"
         android:id="@+id/editTextTextPassword"
@@ -52,6 +53,7 @@
         android:layout_marginTop="63dp"
         android:layout_marginEnd="101dp"
         android:ems="10"
+        android:drawableStart="@drawable/icon_lock"
         android:paddingLeft="10dp"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"

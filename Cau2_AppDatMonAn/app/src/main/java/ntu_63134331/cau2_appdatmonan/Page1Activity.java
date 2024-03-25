@@ -49,9 +49,12 @@ public class Page1Activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 Intent myintent = new Intent(Page1Activity.this, SubActivity.class);
-                myintent.putExtra("tenMonAn",tenMonAn[i]);
+                myintent.putExtra("tenMonAn",tenMonAn[i]);// đưa thêm tên món ăn
                 myintent.putExtra("idAnhMinhHoa", idAnhMinhHoa[i]); // Đưa id của hình ảnh
                 myintent.putExtra("moTa", moTa[i]);// đưa thêm mô tả món ăn
+                myintent.putExtra("donGia",donGia[i]);// đưa thêm đơn giá để hiển thị
+
+                // Tạo chuỗi từ số thực để hiển thị đơn giá
                 startActivity(myintent);
             }
         });
