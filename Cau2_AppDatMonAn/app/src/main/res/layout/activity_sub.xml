@@ -61,9 +61,13 @@
         android:id="@+id/btnDM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
         android:text="Đặt Món" />
 
     <Button
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
         android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
