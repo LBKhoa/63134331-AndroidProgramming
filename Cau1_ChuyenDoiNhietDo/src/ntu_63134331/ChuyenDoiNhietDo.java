@@ -61,6 +61,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(lblNewLabel);
 
 		txtC = new JTextField();
+		txtC.setFont(new Font("Tahoma", Font.BOLD, 18));
 		txtC.setBounds(189, 105, 209, 37);
 		contentPane.add(txtC);
 		txtC.setColumns(10);
@@ -111,6 +112,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(rdbtnF);
 
 		txtF = new JTextField();
+		txtF.setFont(new Font("Tahoma", Font.BOLD, 18));
 		txtF.setColumns(10);
 		txtF.setBounds(189, 174, 209, 37);
 		contentPane.add(txtF);
@@ -128,6 +130,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(rdbtnK);
 
 		txtK = new JTextField();
+		txtK.setFont(new Font("Tahoma", Font.BOLD, 18));
 		txtK.setColumns(10);
 		txtK.setBounds(189, 240, 209, 37);
 		contentPane.add(txtK);
@@ -145,6 +148,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(rdbtnR);
 
 		txtR = new JTextField();
+		txtR.setFont(new Font("Tahoma", Font.BOLD, 18));
 		txtR.setColumns(10);
 		txtR.setBounds(189, 314, 209, 37);
 		contentPane.add(txtR);
@@ -162,6 +166,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(rdbtnD);
 
 		txtD = new JTextField();
+		txtD.setFont(new Font("Tahoma", Font.BOLD, 18));
 		txtD.setColumns(10);
 		txtD.setBounds(189, 376, 209, 37);
 		contentPane.add(txtD);
@@ -179,6 +184,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(rdbtnN);
 
 		txtN = new JTextField();
+		txtN.setFont(new Font("Tahoma", Font.BOLD, 18));
 		txtN.setColumns(10);
 		txtN.setBounds(189, 452, 209, 37);
 		contentPane.add(txtN);
@@ -206,7 +212,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 		rdbtnN.addItemListener(new RadioButtonHandler(txtN));
 
 		txtCheck = new JTextField();
-		txtCheck.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		txtCheck.setFont(new Font("Tahoma", Font.BOLD, 18));
 		txtCheck.setColumns(10);
 		txtCheck.setBounds(631, 237, 209, 37);
 		contentPane.add(txtCheck);
@@ -372,7 +378,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 			}
 		}
 	}
-
+	// Các phương thức chuyển đổi từ 1 đơn vị nhiệt độ sang các đơn vị khác
 	private void chuyenDoiCelsius() {
 		double celsius = Double.parseDouble(txtC.getText());
 		double fahrenheit = celsius * 9 / 5 + 32;
@@ -462,5 +468,4 @@ public class ChuyenDoiNhietDo extends JFrame {
 		txtR.setText(String.format("%.2f", rankine));
 		txtD.setText(String.format("%.2f", delisle));
 	}
-
 }
