@@ -83,11 +83,15 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(btnCD);
 		
 		rdbtnC = new JRadioButton("Celcius");
+		rdbtnC.setForeground(new Color(128, 64, 0));
+		rdbtnC.setBackground(new Color(255, 255, 255));
 		rdbtnC.setFont(new Font("Tahoma", Font.BOLD, 18));
 		rdbtnC.setBounds(111, 105, 103, 37);
 		contentPane.add(rdbtnC);
 		
 		rdbtnF = new JRadioButton("Fahrenheit");
+		rdbtnF.setForeground(new Color(0, 64, 128));
+		rdbtnF.setBackground(new Color(255, 255, 255));
 		rdbtnF.setFont(new Font("Tahoma", Font.BOLD, 18));
 		rdbtnF.setBounds(111, 171, 133, 37);
 		contentPane.add(rdbtnF);
@@ -103,6 +107,8 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(lblNewLabel_1_1_1);
 		
 		rdbtnK = new JRadioButton("Kelvin");
+		rdbtnK.setForeground(new Color(128, 128, 255));
+		rdbtnK.setBackground(new Color(255, 255, 255));
 		rdbtnK.setFont(new Font("Tahoma", Font.BOLD, 18));
 		rdbtnK.setBounds(111, 237, 103, 37);
 		contentPane.add(rdbtnK);
@@ -118,6 +124,8 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(lblNewLabel_1_1_1_1);
 		
 		rdbtnR = new JRadioButton("Rankine");
+		rdbtnR.setForeground(new Color(0, 128, 0));
+		rdbtnR.setBackground(new Color(255, 255, 255));
 		rdbtnR.setFont(new Font("Tahoma", Font.BOLD, 18));
 		rdbtnR.setBounds(111, 308, 103, 37);
 		contentPane.add(rdbtnR);
@@ -133,6 +141,8 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(lblNewLabel_1_1_1_1_1);
 		
 		rdbtnD = new JRadioButton("Delisle");
+		rdbtnD.setForeground(new Color(255, 0, 0));
+		rdbtnD.setBackground(new Color(255, 255, 255));
 		rdbtnD.setFont(new Font("Tahoma", Font.BOLD, 18));
 		rdbtnD.setBounds(111, 373, 103, 37);
 		contentPane.add(rdbtnD);
@@ -148,6 +158,8 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(lblNewLabel_1_1_1_1_1_1);
 		
 		rdbtnN = new JRadioButton("Newton");
+		rdbtnN.setForeground(new Color(128, 0, 255));
+		rdbtnN.setBackground(new Color(255, 255, 255));
 		rdbtnN.setFont(new Font("Tahoma", Font.BOLD, 18));
 		rdbtnN.setBounds(111, 452, 103, 37);
 		contentPane.add(rdbtnN);
