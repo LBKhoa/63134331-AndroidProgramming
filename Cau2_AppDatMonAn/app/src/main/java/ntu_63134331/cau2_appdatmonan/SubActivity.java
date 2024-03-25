@@ -28,9 +28,12 @@ public class SubActivity extends AppCompatActivity {
             return insets;
         });
         txt_subMonAn = findViewById(R.id.txt_subMonAn);
+        img_MA = findViewById(R.id.img_MA);
         //nhận intent
         Intent myIntent = getIntent();
         String tenMonAn = myIntent.getStringExtra("tenMonAn");
+        int idAnhMinhHoa = myIntent.getIntExtra("idAnhMinhHoa",0);
         txt_subMonAn.setText(tenMonAn);
+        img_MA.setImageResource(idAnhMinhHoa);
     }
 }

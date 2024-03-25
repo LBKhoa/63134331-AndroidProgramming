@@ -16,7 +16,6 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 
 public class Page1Activity extends AppCompatActivity {
-    Button btnBack;
     int idAnhMinhHoa[]= {R.drawable.cc,R.drawable.banh_mi_xuc_xich,R.drawable.banh_xeo,R.drawable.bun_bo_hue,R.drawable.bun_cha,R.drawable.cct,R.drawable.cg,R.drawable.com_ga_hai_nam,R.drawable.ct,R.drawable.cts,R.drawable.ga_nuong,R.drawable.hu_tieu_nam_vang,R.drawable.pho_bo};
     String tenMonAn[]= {"Cơm Chiên","Bánh mì xúc xích","Bánh xèo","Bún bò Huế","Bún chả","Cơm chiên tôm","Cơm gà","Cơm gà hải nam","Cơm trộn","Cơm tấm sườn","Gà nướng","Hủ tiếu Nam Vang","Phở bò"};
     double donGia[]={20000,30000,25000,22000,27000,30000,24000,30000,28000,25000,31000,34000,30000};
@@ -51,16 +50,10 @@ public class Page1Activity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 Intent myintent = new Intent(Page1Activity.this, SubActivity.class);
                 myintent.putExtra("tenMonAn",tenMonAn[i]);
+                myintent.putExtra("idAnhMinhHoa", idAnhMinhHoa[i]); // Đưa id của hình ảnh
                 startActivity(myintent);
             }
         });
-//        btnBack = findViewById(R.id.btnBack);
-//        btnBack.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                //thoát childActivity
-//                finish();
-//            }
-//        });
+
     }
 }
