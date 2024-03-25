@@ -263,93 +263,93 @@ public class ChuyenDoiNhietDo extends JFrame {
 		        }
 		    }
 		}
-	private void chuyenDoiCelsius() {
-        double celsius = Double.parseDouble(txtC.getText());
-        double fahrenheit = celsius * 9 / 5 + 32;
-        double kelvin = celsius + 273.15;
-        double rankine = (celsius + 273.15) * 9 / 5;
-        double delisle = (100 - celsius) * 3 / 2;
-        double newton = celsius * 33 / 100;
-        // Hiển thị kết quả vào các JTextField tương ứng
-        txtF.setText(String.format("%.2f", fahrenheit));
-        txtK.setText(String.format("%.2f", kelvin));
-        txtR.setText(String.format("%.2f", rankine));
-        txtD.setText(String.format("%.2f", delisle));
-        txtN.setText(String.format("%.2f", newton));
-    }
-	private void chuyenDoiFahrenheit() {
-	    double fahrenheit = Double.parseDouble(txtF.getText());
-	    double celsius = (fahrenheit - 32) * 5 / 9;
-	    double kelvin = (fahrenheit + 459.67) * 5 / 9;
-	    double rankine = fahrenheit + 459.67;
-	    double delisle = (212 - fahrenheit) * 5 / 6;
-	    double newton = (fahrenheit - 32) * 11 / 60;
-	    // Hiển thị kết quả vào các JTextField tương ứng
-	    txtC.setText(String.format("%.2f", celsius));
-	    txtK.setText(String.format("%.2f", kelvin));
-	    txtR.setText(String.format("%.2f", rankine));
-	    txtD.setText(String.format("%.2f", delisle));
-	    txtN.setText(String.format("%.2f", newton));
-	}
+		private void chuyenDoiCelsius() {
+	        double celsius = Double.parseDouble(txtC.getText());
+	        double fahrenheit = celsius * 9 / 5 + 32;
+	        double kelvin = celsius + 273.15;
+	        double rankine = (celsius + 273.15) * 9 / 5;
+	        double delisle = (100 - celsius) * 3 / 2;
+	        double newton = celsius * 33 / 100;
+	        // Hiển thị kết quả vào các JTextField tương ứng
+	        txtF.setText(String.format("%.2f", fahrenheit));
+	        txtK.setText(String.format("%.2f", kelvin));
+	        txtR.setText(String.format("%.2f", rankine));
+	        txtD.setText(String.format("%.2f", delisle));
+	        txtN.setText(String.format("%.2f", newton));
+	    }
+		private void chuyenDoiFahrenheit() {
+		    double fahrenheit = Double.parseDouble(txtF.getText());
+		    double celsius = (fahrenheit - 32) * 5 / 9;
+		    double kelvin = (fahrenheit + 459.67) * 5 / 9;
+		    double rankine = fahrenheit + 459.67;
+		    double delisle = (212 - fahrenheit) * 5 / 6;
+		    double newton = (fahrenheit - 32) * 11 / 60;
+		    // Hiển thị kết quả vào các JTextField tương ứng
+		    txtC.setText(String.format("%.2f", celsius));
+		    txtK.setText(String.format("%.2f", kelvin));
+		    txtR.setText(String.format("%.2f", rankine));
+		    txtD.setText(String.format("%.2f", delisle));
+		    txtN.setText(String.format("%.2f", newton));
+		}
 
-	private void chuyenDoiKelvin() {
-	    double kelvin = Double.parseDouble(txtK.getText());
-	    double celsius = kelvin - 273.15;
-	    double fahrenheit = kelvin * 9 / 5 - 459.67;
-	    double rankine = kelvin * 9 / 5;
-	    double delisle = (373.15 - kelvin) * 3 / 2;
-	    double newton = (kelvin - 273.15) * 33 / 100;
-	    // Hiển thị kết quả vào các JTextField tương ứng
-	    txtC.setText(String.format("%.2f", celsius));
-	    txtF.setText(String.format("%.2f", fahrenheit));
-	    txtR.setText(String.format("%.2f", rankine));
-	    txtD.setText(String.format("%.2f", delisle));
-	    txtN.setText(String.format("%.2f", newton));
-	}
+		private void chuyenDoiKelvin() {
+		    double kelvin = Double.parseDouble(txtK.getText());
+		    double celsius = kelvin - 273.15;
+		    double fahrenheit = kelvin * 9 / 5 - 459.67;
+		    double rankine = kelvin * 9 / 5;
+		    double delisle = (373.15 - kelvin) * 3 / 2;
+		    double newton = (kelvin - 273.15) * 33 / 100;
+		    // Hiển thị kết quả vào các JTextField tương ứng
+		    txtC.setText(String.format("%.2f", celsius));
+		    txtF.setText(String.format("%.2f", fahrenheit));
+		    txtR.setText(String.format("%.2f", rankine));
+		    txtD.setText(String.format("%.2f", delisle));
+		    txtN.setText(String.format("%.2f", newton));
+		}
 
-	private void chuyenDoiRankine() {
-	    double rankine = Double.parseDouble(txtR.getText());
-	    double celsius = (rankine - 491.67) * 5 / 9;
-	    double fahrenheit = rankine - 459.67;
-	    double kelvin = rankine * 5 / 9;
-	    double delisle = (671.67 - rankine) * 5 / 6;
-	    double newton = (rankine - 491.67) * 11 / 60;
-	    // Hiển thị kết quả vào các JTextField tương ứng
-	    txtC.setText(String.format("%.2f", celsius));
-	    txtF.setText(String.format("%.2f", fahrenheit));
-	    txtK.setText(String.format("%.2f", kelvin));
-	    txtD.setText(String.format("%.2f", delisle));
-	    txtN.setText(String.format("%.2f", newton));
-	}
+		private void chuyenDoiRankine() {
+		    double rankine = Double.parseDouble(txtR.getText());
+		    double celsius = (rankine - 491.67) * 5 / 9;
+		    double fahrenheit = rankine - 459.67;
+		    double kelvin = rankine * 5 / 9;
+		    double delisle = (671.67 - rankine) * 5 / 6;
+		    double newton = (rankine - 491.67) * 11 / 60;
+		    // Hiển thị kết quả vào các JTextField tương ứng
+		    txtC.setText(String.format("%.2f", celsius));
+		    txtF.setText(String.format("%.2f", fahrenheit));
+		    txtK.setText(String.format("%.2f", kelvin));
+		    txtD.setText(String.format("%.2f", delisle));
+		    txtN.setText(String.format("%.2f", newton));
+		}
 
-	private void chuyenDoiDelisle() {
-	    double delisle = Double.parseDouble(txtD.getText());
-	    double celsius = 100 - delisle * 2 / 3;
-	    double fahrenheit = 212 - delisle * 6 / 5;
-	    double kelvin = 373.15 - delisle * 2 / 3;
-	    double rankine = 671.67 - delisle * 6 / 5;
-	    double newton = (33 - delisle) * 100 / 60;
-	    // Hiển thị kết quả vào các JTextField tương ứng
-	    txtC.setText(String.format("%.2f", celsius));
-	    txtF.setText(String.format("%.2f", fahrenheit));
-	    txtK.setText(String.format("%.2f", kelvin));
-	    txtR.setText(String.format("%.2f", rankine));
-	    txtN.setText(String.format("%.2f", newton));
-	}
+		private void chuyenDoiDelisle() {
+		    double delisle = Double.parseDouble(txtD.getText());
+		    double celsius = 100 - delisle * 2 / 3;
+		    double fahrenheit = 212 - delisle * 6 / 5;
+		    double kelvin = 373.15 - delisle * 2 / 3;
+		    double rankine = 671.67 - delisle * 6 / 5;
+		    double newton = (33 - delisle) * 100 / 60;
+		    // Hiển thị kết quả vào các JTextField tương ứng
+		    txtC.setText(String.format("%.2f", celsius));
+		    txtF.setText(String.format("%.2f", fahrenheit));
+		    txtK.setText(String.format("%.2f", kelvin));
+		    txtR.setText(String.format("%.2f", rankine));
+		    txtN.setText(String.format("%.2f", newton));
+		}
 
-	private void chuyenDoiNewton() {
-	    double newton = Double.parseDouble(txtN.getText());
-	    double celsius = newton * 100 / 33;
-	    double fahrenheit = newton * 60 / 11 + 32;
-	    double kelvin = newton * 100 / 33 + 273.15;
-	    double rankine = newton * 60 / 11 + 491.67;
-	    double delisle = 33 - newton;
-	    // Hiển thị kết quả vào các JTextField tương ứng
-	    txtC.setText(String.format("%.2f", celsius));
-	    txtF.setText(String.format("%.2f", fahrenheit));
-	    txtK.setText(String.format("%.2f", kelvin));
-	    txtR.setText(String.format("%.2f", rankine));
-	    txtD.setText(String.format("%.2f", delisle));
-	}
+		private void chuyenDoiNewton() {
+		    double newton = Double.parseDouble(txtN.getText());
+		    double celsius = newton * 100 / 33;
+		    double fahrenheit = newton * 60 / 11 + 32;
+		    double kelvin = newton * 100 / 33 + 273.15;
+		    double rankine = newton * 60 / 11 + 491.67;
+		    double delisle = 33 - newton;
+		    // Hiển thị kết quả vào các JTextField tương ứng
+		    txtC.setText(String.format("%.2f", celsius));
+		    txtF.setText(String.format("%.2f", fahrenheit));
+		    txtK.setText(String.format("%.2f", kelvin));
+		    txtR.setText(String.format("%.2f", rankine));
+		    txtD.setText(String.format("%.2f", delisle));
+		}
 
 }
