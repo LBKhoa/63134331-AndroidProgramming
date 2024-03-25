@@ -34,7 +34,7 @@
     <ImageView
         android:id="@+id/img_MA"
         android:layout_width="match_parent"
-        android:layout_height="276dp"
+        android:layout_height="353dp"
         app:srcCompat="@drawable/cts" />
 
     <TextView
