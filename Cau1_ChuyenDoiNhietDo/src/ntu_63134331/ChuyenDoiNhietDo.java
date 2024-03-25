@@ -199,70 +199,70 @@ public class ChuyenDoiNhietDo extends JFrame {
         
 	}
 	// Lớp lắng nghe sự kiện cho các JRadioButton
-	class RadioButtonHandler implements ItemListener {
-	    private JTextField textField;
+		class RadioButtonHandler implements ItemListener {
+		    private JTextField textField;
 
-	    public RadioButtonHandler(JTextField textField) {
-	        this.textField = textField;
-	    }
+		    public RadioButtonHandler(JTextField textField) {
+		        this.textField = textField;
+		    }
 
-	    @Override
-	    public void itemStateChanged(ItemEvent e) {
-	        // Kiểm tra xem JRadioButton được chọn
-	        if (e.getStateChange() == ItemEvent.SELECTED) {
-	            // Lấy dữ liệu từ JRadioButton được chọn
-	            JRadioButton selectedRadioButton = (JRadioButton) e.getItem();
-	            // Kiểm tra và vô hiệu hóa các JTextField không được chọn
-	            if (selectedRadioButton == rdbtnC) {
-	                txtF.setEditable(false);
-	                txtK.setEditable(false);
-	                txtR.setEditable(false);
-	                txtD.setEditable(false);
-	                txtN.setEditable(false);
-	            } else if (selectedRadioButton == rdbtnF) {
-	                txtC.setEditable(false);
-	                txtK.setEditable(false);
-	                txtR.setEditable(false);
-	                txtD.setEditable(false);
-	                txtN.setEditable(false);
-	            } else if (selectedRadioButton == rdbtnK) {
-	                txtC.setEditable(false);
-	                txtF.setEditable(false);
-	                txtR.setEditable(false);
-	                txtD.setEditable(false);
-	                txtN.setEditable(false);
-	            } else if (selectedRadioButton == rdbtnR) {
-	                txtC.setEditable(false);
-	                txtF.setEditable(false);
-	                txtK.setEditable(false);
-	                txtD.setEditable(false);
-	                txtN.setEditable(false);
-	            } else if (selectedRadioButton == rdbtnD) {
-	                txtC.setEditable(false);
-	                txtF.setEditable(false);
-	                txtK.setEditable(false);
-	                txtR.setEditable(false);
-	                txtN.setEditable(false);
-	            } else if (selectedRadioButton == rdbtnN) {
-	                txtC.setEditable(false);
-	                txtF.setEditable(false);
-	                txtK.setEditable(false);
-	                txtR.setEditable(false);
-	                txtD.setEditable(false);
-	            }
-	            // Đặt lại text của textField
-	            textField.setText("");
-	            // Bật cờ cho phép sửa
-	            textField.setEditable(true);
-	         // Xóa bỏ chọn của các JRadioButton khác trong ButtonGroup
-	            buttonGroup.getElements().asIterator().forEachRemaining(radioButton -> {
-                    if (radioButton != e.getItem()) {
-                        radioButton.setSelected(false);
-                    }
-                });
-	        }
-	    }
-	}
+		    @Override
+		    public void itemStateChanged(ItemEvent e) {
+		        // Kiểm tra xem JRadioButton được chọn
+		        if (e.getStateChange() == ItemEvent.SELECTED) {
+		            // Lấy dữ liệu từ JRadioButton được chọn
+		            JRadioButton selectedRadioButton = (JRadioButton) e.getItem();
+		            // Kiểm tra và vô hiệu hóa các JTextField không được chọn
+		            if (selectedRadioButton == rdbtnC) {
+		                txtF.setEditable(false);
+		                txtK.setEditable(false);
+		                txtR.setEditable(false);
+		                txtD.setEditable(false);
+		                txtN.setEditable(false);
+		            } else if (selectedRadioButton == rdbtnF) {
+		                txtC.setEditable(false);
+		                txtK.setEditable(false);
+		                txtR.setEditable(false);
+		                txtD.setEditable(false);
+		                txtN.setEditable(false);
+		            } else if (selectedRadioButton == rdbtnK) {
+		                txtC.setEditable(false);
+		                txtF.setEditable(false);
+		                txtR.setEditable(false);
+		                txtD.setEditable(false);
+		                txtN.setEditable(false);
+		            } else if (selectedRadioButton == rdbtnR) {
+		                txtC.setEditable(false);
+		                txtF.setEditable(false);
+		                txtK.setEditable(false);
+		                txtD.setEditable(false);
+		                txtN.setEditable(false);
+		            } else if (selectedRadioButton == rdbtnD) {
+		                txtC.setEditable(false);
+		                txtF.setEditable(false);
+		                txtK.setEditable(false);
+		                txtR.setEditable(false);
+		                txtN.setEditable(false);
+		            } else if (selectedRadioButton == rdbtnN) {
+		                txtC.setEditable(false);
+		                txtF.setEditable(false);
+		                txtK.setEditable(false);
+		                txtR.setEditable(false);
+		                txtD.setEditable(false);
+		            }
+		            // Đặt lại text của textField
+		            textField.setText("");
+		            // Bật cờ cho phép sửa
+		            textField.setEditable(true);
+		         // Xóa bỏ chọn của các JRadioButton khác trong ButtonGroup
+		            buttonGroup.getElements().asIterator().forEachRemaining(radioButton -> {
+	                    if (radioButton != e.getItem()) {
+	                        radioButton.setSelected(false);
+	                    }
+	                });
+		        }
+		    }
+		}
 	private void chuyenDoiCelsius() {
         double celsius = Double.parseDouble(txtC.getText());
         double fahrenheit = celsius * 9 / 5 + 32;
