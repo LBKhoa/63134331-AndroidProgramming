@@ -181,7 +181,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(lblNewLabel_1_1_1_1_1_1_1);
 		
 		// Khởi tạo và thêm các RadioButton vào ButtonGroup
-        buttonGroup = new ButtonGroup();
+		buttonGroup = new ButtonGroup();
         buttonGroup.add(rdbtnC);
         buttonGroup.add(rdbtnF);
         buttonGroup.add(rdbtnK);
