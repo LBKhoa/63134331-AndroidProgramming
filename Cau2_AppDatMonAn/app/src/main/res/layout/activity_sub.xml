@@ -53,7 +53,7 @@
         android:id="@+id/txt_DonGia"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:background="#FFEB3B"
+        android:background="#BDAD1D"
         android:text="Đơn Giá"
         android:textAlignment="center"
         android:textColor="@color/black"

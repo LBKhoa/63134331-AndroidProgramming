@@ -2,6 +2,8 @@ package ntu_63134331.cau2_appdatmonan;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -10,12 +12,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.widget.Toast;
 
 public class SubActivity extends AppCompatActivity {
     TextView txt_subMonAn;
     ImageView img_MA;
     TextView txt_subMoTa;
     TextView txt_DonGia;
+    Button btnDM;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +48,23 @@ public class SubActivity extends AppCompatActivity {
         img_MA.setImageResource(idAnhMinhHoa);
         txt_subMoTa.setText(moTa);
         txt_DonGia.setText(donGiaString);
+
+        //tìm nút btnDM
+        btnDM = findViewById(R.id.btnDM);
+        //Xử lý sự kiện khi ấn nút đặt món
+        btnDM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //hiển thị hộp thoại thông báo khi ấn nút Đặt món
+                String tenMonAn = txt_subMonAn.getText().toString(); // Lấy tên món ăn từ TextView
+                String donGiaString = txt_DonGia.getText().toString(); // Lấy đơn giá từ TextView
+
+                // Tạo thông báo
+                String message = tenMonAn + " đã đặt thành công với đơn giá " + donGiaString + ". Món sẽ được giao trong 15 phút.";
+                // Hiển thị thông báo bằng Toast
+                Toast.makeText(SubActivity.this, message, Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
 }
