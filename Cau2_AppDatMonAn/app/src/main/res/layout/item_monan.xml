@@ -7,7 +7,7 @@
     android:background="#FFC107"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView
-        android:id="@+id/imAnhDaiDien"
+        android:id="@+id/imgAnhDaiDien"
         android:layout_width="90dp"
         android:padding="2dp"
         android:layout_height="120dp"/>
@@ -18,30 +18,30 @@
         android:orientation="vertical">
 
         <TextView
-            android:textColor="@color/black"
             android:id="@+id/tvTenMonAn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Món Thứ Nhất"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:id="@+id/tvDonGia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2000000đ"
-            android:textSize="20dp" />
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <TextView
-            android:textStyle="bold"
-            android:textColor="@color/black"
             android:id="@+id/tvMoTa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nội dung mô tả ở đây"
-            android:textSize="20dp" />
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

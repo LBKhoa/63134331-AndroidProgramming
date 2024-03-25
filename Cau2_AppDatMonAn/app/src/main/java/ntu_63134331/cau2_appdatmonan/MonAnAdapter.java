@@ -17,7 +17,7 @@ public class MonAnAdapter extends BaseAdapter {
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public MonAnAdapter( Context _context, ArrayList<MonAn> dsMonAn) {
+    public MonAnAdapter(Context _context, int item_monan, ArrayList<MonAn> dsMonAn) {
         this.dsMonAn = dsMonAn;
         this.context = _context;
         this.layoutInflater = LayoutInflater.from(_context);
@@ -51,7 +51,7 @@ public class MonAnAdapter extends BaseAdapter {
         TextView textView_TenMon = viewHienHanh.findViewById(R.id.tvTenMonAn);
         TextView textView_DonGia = viewHienHanh.findViewById(R.id.tvDonGia);
         TextView textView_MoTa = viewHienHanh.findViewById(R.id.tvMoTa);
-        ImageView imageView_Anh = viewHienHanh.findViewById(R.id.imAnhDaiDien);
+        ImageView imageView_Anh = viewHienHanh.findViewById(R.id.imgAnhDaiDien);
         //set lên
         textView_TenMon.setText(monAnHienHanh.getTenMonAn());
         textView_DonGia.setText(String.valueOf(monAnHienHanh.getDonGia()));

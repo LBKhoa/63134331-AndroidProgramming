@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/custom_background_gradian"
+    tools:context=".SubActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="Bạn Đã Chọn"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_subMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:text="Món Cơm Tấm Sườn"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_MA"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        app:srcCompat="@drawable/cts" />
+
+    <TextView
+        android:id="@+id/txt_subTTMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:background="#FFEB3B"
+        android:text="Thông tin mô tả"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_DonGia"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#FFEB3B"
+        android:text="Đơn Giá"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt Món" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thoát" />
+</LinearLayout>
