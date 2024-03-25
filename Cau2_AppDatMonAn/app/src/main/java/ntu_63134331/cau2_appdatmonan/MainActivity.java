@@ -59,7 +59,5 @@ public class MainActivity extends AppCompatActivity {
         });
         //tìm listview
 
-
-
     }
 }

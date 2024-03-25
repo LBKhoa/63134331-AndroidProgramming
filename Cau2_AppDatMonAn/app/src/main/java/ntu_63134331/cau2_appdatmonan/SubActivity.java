@@ -19,7 +19,7 @@ public class SubActivity extends AppCompatActivity {
     ImageView img_MA;
     TextView txt_subMoTa;
     TextView txt_DonGia;
-    Button btnDM;
+    Button btnDM, btnBack, btnOut;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +51,8 @@ public class SubActivity extends AppCompatActivity {
 
         //tìm nút btnDM
         btnDM = findViewById(R.id.btnDM);
+        btnBack = findViewById(R.id.btnBack);
+        btnOut = findViewById(R.id.btnOut);
         //Xử lý sự kiện khi ấn nút đặt món
         btnDM.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +67,23 @@ public class SubActivity extends AppCompatActivity {
                 Toast.makeText(SubActivity.this, message, Toast.LENGTH_LONG).show();
             }
         });
-
+        //Xử lý sự kiện khi ấn nút Thót
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Khi người dùng nhấn nút Quay lại, gọi phương thức finish() để đóng SubActivity và quay lại Activity trước đó
+                finish();
+            }
+        });
+        btnOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Tạo intent để chuyển về MainActivity
+                Intent intent = new Intent(SubActivity.this, MainActivity.class);
+                startActivity(intent);
+                // Đóng SubActivity
+                finish();
+            }
+        });
     }
 }
