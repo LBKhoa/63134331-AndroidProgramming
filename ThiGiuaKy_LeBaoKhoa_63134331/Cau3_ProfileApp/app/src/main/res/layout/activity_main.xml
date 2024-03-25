@@ -46,7 +46,7 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lê Bảo Khoa"
+                    android:text="Lê Bảo Khoa | 63 CNTT-2"
                     android:layout_marginTop="16dp"
                     android:textSize="25sp"
                     android:textStyle="bold"
@@ -59,7 +59,7 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="lebaokhoa.200329@gmail.com"
+                    android:text="lebaokhoa.200329@gmail.com | Phone: 0396683796"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="@+id/textView"
                     app:layout_constraintStart_toStartOf="@+id/textView"
@@ -86,7 +86,7 @@
                         android:drawableStart="@drawable/ic_1"
                         android:drawablePadding="20dp"
                         android:paddingStart="20dp"
-                        android:text="Đánh Giá"
+                        android:text="Đánh Giá Lập Trình Di Động Tương Đối"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         style="@android:style/Widget.Button"
@@ -106,7 +106,7 @@
                         android:drawableStart="@drawable/ic_2"
                         android:drawablePadding="20dp"
                         android:paddingStart="20dp"
-                        android:text="Thông tin"
+                        android:text="Sở Thích Mày Mò, Nghiên Cứu"
                         android:textAlignment="viewStart" />
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/button3"
@@ -123,7 +123,7 @@
                         android:drawableStart="@drawable/ic_3"
                         android:drawablePadding="20dp"
                         android:paddingStart="20dp"
-                        android:text="Thông Tin Cá Nhân"
+                        android:text="Xây Dựng Bản Thân Thành Lập trình Viên"
                         android:textAlignment="viewStart" />
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/button4"
@@ -140,7 +140,7 @@
                         android:drawableStart="@drawable/ic_4"
                         android:drawablePadding="20dp"
                         android:paddingStart="20dp"
-                        android:text="Nổi Bật"
+                        android:text="Đã Học Được Nhiều Ngôn Ngữ Lập Trình"
                         android:textAlignment="viewStart" />
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/button5"
@@ -157,7 +157,7 @@
                         android:drawableStart="@drawable/ic_5"
                         android:drawablePadding="20dp"
                         android:paddingStart="20dp"
-                        android:text="Ưu điểm"
+                        android:text="Mong Muốn Có Một Công Việc Ổn Định"
                         android:textAlignment="viewStart" />
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="match_parent"
