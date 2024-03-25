@@ -33,6 +33,7 @@ public class ChuyenDoiNhietDo extends JFrame {
 
 	
 	public ChuyenDoiNhietDo() {
+		setTitle("Chuyển Đổi Các Đơn Vị Nhiệt Độ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 999, 631);
 		contentPane = new JPanel();
