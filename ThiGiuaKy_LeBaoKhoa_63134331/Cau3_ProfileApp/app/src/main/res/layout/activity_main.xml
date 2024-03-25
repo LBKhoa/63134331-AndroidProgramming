@@ -88,7 +88,7 @@
                         android:drawableStart="@drawable/ic_1"
                         android:drawablePadding="20dp"
                         android:paddingStart="20dp"
-                        android:text="Đánh Giá Lập Trình Di Động Tương Đối"
+                        android:text="Đánh Giá Khả Lập Trình Di Động Tương Đối"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         style="@android:style/Widget.Button"
@@ -125,7 +125,7 @@
                         android:drawableStart="@drawable/ic_3"
                         android:drawablePadding="20dp"
                         android:paddingStart="20dp"
-                        android:text="Xây Dựng Bản Thân Thành Lập trình Viên"
+                        android:text="Sinh Viên Chuyên Ngành Công Nghệ Phần Mềm - Khoa CNTT - ĐH NHA TRANG "
                         android:textAlignment="viewStart" />
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/button4"
