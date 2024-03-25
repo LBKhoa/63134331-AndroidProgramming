@@ -7,11 +7,13 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JRadioButton;
 import java.awt.event.ActionListener;
@@ -60,6 +62,8 @@ public class ChuyenDoiNhietDo extends JFrame {
 		contentPane.add(lblNewLabel_1_1);
 		
 		JButton btnCD = new JButton("Chuyển Đổi");
+		btnCD.setForeground(new Color(164, 200, 55));
+		btnCD.setBackground(new Color(164, 200, 55));
 		btnCD.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// Kiểm tra xem RadioButton nào đang được chọn
@@ -78,9 +82,11 @@ public class ChuyenDoiNhietDo extends JFrame {
                 }
 			}
 		});
+		
 		btnCD.setFont(new Font("Tahoma", Font.BOLD, 20));
 		btnCD.setBounds(553, 105, 157, 29);
 		contentPane.add(btnCD);
+		
 		
 		rdbtnC = new JRadioButton("Celcius");
 		rdbtnC.setForeground(new Color(128, 64, 0));
