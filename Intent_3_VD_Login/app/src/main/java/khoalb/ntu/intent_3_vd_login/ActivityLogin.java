@@ -47,7 +47,7 @@ public class ActivityLogin extends AppCompatActivity {
 
                 if (email.equals(CORRECT_EMAIL) && password.equals(CORRECT_PASSWORD)) {
                     // Nếu đúng, chuyển sang Activity khác
-                    Intent intent = new Intent(ActivityLogin.this, Page1Activity.class);
+                    Intent intent = new Intent(ActivityLogin.this, ActivityHome.class);
                     startActivity(intent);
                 } else {
                     // Nếu không đúng, hiển thị thông báo lỗi
