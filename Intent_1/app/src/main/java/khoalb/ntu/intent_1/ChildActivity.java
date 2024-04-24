@@ -31,6 +31,7 @@ public class ChildActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent myIntent2 = new Intent(ChildActivity.this,MainActivity.class);
                 startActivity(myIntent2);
+                //finish();
             }
         });
     }
