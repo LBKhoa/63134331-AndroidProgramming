@@ -12,7 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#9C27B0"
+        android:background="#A711C1"
         android:text="This is MainActivity"
         android:textColor="#FFEB3B"
         android:textSize="34sp"
