@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mylist.clear();
-                Cursor c = mydatabase.query("tblop",null,null,null,null,null,null);
+                Cursor c = mydatabase.query("tbllop",null,null,null,null,null,null);
                 c.moveToNext();
                 String data = "";
                 while (c.isAfterLast() == false)
